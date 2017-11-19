@@ -181,7 +181,7 @@
                         </div>
                         <h3 id="ProposedApproach">2. Proposed Approach</h3>
                         <p>The process of speech sequence segmenting comprises of the following steps:</p>
-                        <ol>
+                        <ol style="padding-left: 20px;">
                             <li> <p><b>Splitting audio into frames</b> - The complete audio is divided into smaller time frames of 20ms each with a hop of 10ms. This is done because in smaller time scales audio signals are statistically unchanged.</p> </li>
                             <li> <p><b>Voice Activity Detection</b> - Voice activity detection (VAD), also known as speech activity detection or speech detection, is a technique used in speech processing in which the presence or absence of human speech is detected. This was performed on each of the 20ms time frames and the time frames in which speech is not detected were discarded.</p> </li>
                             <li> <p><b>Feature Extraction</b> - Linear Predictive Coefficients (LPCs) are widely used features in automatic speech sequence segmenting. The redundancy in the speech signal is exploited in the LP analysis. The prediction of current sample as a linear combination of past p samples form the basis of linear prediction analysis where p is the order of prediction. The predicted sample s^(n) can be represented as follows,
