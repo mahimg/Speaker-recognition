@@ -370,9 +370,10 @@ ol li {
 }
 .services p {
 	color: #6c7279;
-	font-size: 13px;
+	font-size: 15px;
 	font-weight: 400;
 	margin-top: 0%;
+	text-align: justify;
 }
 .services-content {
 	margin: 10px;
