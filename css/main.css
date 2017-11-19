@@ -573,3 +573,6 @@ table, th, td {
 .dual-list {
 	padding-left: 10px;
 }
+#header-slider {
+	height: 450px;
+}
