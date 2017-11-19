@@ -6,7 +6,7 @@
 
 
 
-@import url(http://fonts.googleapis.com/css?family=Open%20Sans:300,400,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Open%20Sans:300,400,500,600,700);
 /* ------------------------------------------------------------------------------
 	 Typography
 -------------------------------------------------------------------------------*/
@@ -573,9 +573,3 @@ table, th, td {
 .dual-list {
 	padding-left: 10px;
 }
-.table td:first-child {
-    text-align: right;
-}​
-.table tr:first-child {
-    text-align: right;
-}​
