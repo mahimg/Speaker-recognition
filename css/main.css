@@ -112,7 +112,7 @@ ol li {
 }
 #header .header-content {
 	margin: 0 auto;
-	padding: 20px 0;
+	padding: 15px 0;
 	width: 100%;
 	-moz-transition: padding 0.3s;
 	-o-transition: padding 0.3s;
@@ -149,6 +149,7 @@ ol li {
 }
 .navigation li {
 	display: inline-block;
+	margin-top: 3px;
 }
 .navigation a {
 	color: #000;
