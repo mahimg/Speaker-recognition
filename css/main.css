@@ -573,3 +573,9 @@ table, th, td {
 .dual-list {
 	padding-left: 10px;
 }
+.table td:first-child {
+    text-align: right;
+}​
+.table tr:first-child {
+    text-align: right;
+}​
