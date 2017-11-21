@@ -577,3 +577,53 @@ table, th, td {
 #header-slider {
 	height: 450px;
 }
+.subtopic {
+	font-size: 18px;
+}
+figure figcaption {
+	/*te*/
+    /*border: 1px dotted blue;*/
+    /*text-align: center;*/
+}
+.center {
+    margin: auto;
+    /*width: 50%;*/
+    /*border: 3px solid green;*/
+    padding: 10px;
+}
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 49.99999%;
+}
+
+.responsive1 {
+    padding: 0 6px;
+    float: left;
+    width: 89.99999%;
+}
+#Conclusions {
+	margin-top: 100px;
+}
