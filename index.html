@@ -31,10 +31,13 @@
                     <ul class="primary-nav">
                         <li><a href="#header-slider">Home</a></li>
                         <!-- <li><a href="#services">Introduction</a></li> -->
-                        <li><a href="#Abstract">Abstract</a></li>
+
                         <li><a href="#Introduction">Introduction</a></li>
                         <li><a href="#ProposedApproach">Proposed Approach</a></li>
                         <li><a href="#Experiments">Results</a></li>
+                        <li><a href="#code">Code</a></li>
+                        <li><a href="#Conclusions">Conclusion</a></li>
+
 
                     </ul>
                 </nav>
@@ -171,21 +174,22 @@
                                 recorded from a multi-speaker conversation, determine the number of speakers, determine the transition times between speakers and assign each speech segment to its speaker.</p>
                             <ol>
                                 <li>
-                                    <p>Miro, Xavier Anguera, et al. <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6135543" style="color: rgb(0,0,255)">”Speaker diarization: A review of recent research.”</a> Audio, Speech, and Language Processing, IEEE Transactions on 20.2 (2012): 356-370 discusses two approach, top-down and bottom-up approach.
-                                        The top-down approach is initialized with very few clusters (usually one) whereas the bottom-up approach is initialized with many clusters (usually more clusters than expected speakers). In both cases the aim is
-                                        to iteratively converge towards an optimum number of clusters. If the final number is higher than the optimum then the system is said to under-cluster.</p>
+                                    <p>Miro, Xavier Anguera, et al. <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6135543" style="color: rgb(0,0,255)">”Speaker diarization: A review of recent research.”</a> Audio, Speech, and Language Processing,
+                                        IEEE Transactions on 20.2 (2012): 356-370 discusses two approach, top-down and bottom-up approach. The top-down approach is initialized with very few clusters (usually one) whereas the bottom-up approach is initialized
+                                        with many clusters (usually more clusters than expected speakers). In both cases the aim is to iteratively converge towards an optimum number of clusters. If the final number is higher than the optimum then the
+                                        system is said to under-cluster.</p>
                                 </li>
                                 <li>
-                                    <p>Qin Jin, Kornel Laskowski, Tanja Schultz, and Alex Waibel, <a href="https://pdfs.semanticscholar.org/910b/3d2fe351188d69007d82457e13c210ba9574.pdf" style="color: rgb(0,0,255)">”Speaker Segmentation and Clustering In meetings”</a> uses BIC ( Bayesian Information Criterion) to calculate the performance of different model. A negative value
-                                        of BIC means that model provides a better fit to the data, that is there is a speaker change at point . Therefore, we continue merging segments until the value of BIC for the two closest segments is negative.</p>
+                                    <p>Qin Jin, Kornel Laskowski, Tanja Schultz, and Alex Waibel, <a href="https://pdfs.semanticscholar.org/910b/3d2fe351188d69007d82457e13c210ba9574.pdf" style="color: rgb(0,0,255)">”Speaker Segmentation and Clustering In meetings”</a>                                        uses BIC ( Bayesian Information Criterion) to calculate the performance of different model. A negative value of BIC means that model provides a better fit to the data, that is there is a speaker change at point
+                                        . Therefore, we continue merging segments until the value of BIC for the two closest segments is negative.</p>
                                 </li>
                                 <li>
-                                    <p>Aadel Alatwi, Stephen So, Kuldip K. Paliwal <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7843309" style="color: rgb(0,0,255)">“Perceptually Motivated Linear Prediction Cepstral Features for Network Speech Recognition”</a> proposed a new method for modifying the power spectrum of input speech to obtain
-                                        a set of perceptually motivated Linear Prediction (LP) parameters that provide noise-robustness to Automatic Speech Recognition (ASR) features</p>
+                                    <p>Aadel Alatwi, Stephen So, Kuldip K. Paliwal <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7843309" style="color: rgb(0,0,255)">“Perceptually Motivated Linear Prediction Cepstral Features for Network Speech Recognition”</a>                                        proposed a new method for modifying the power spectrum of input speech to obtain a set of perceptually motivated Linear Prediction (LP) parameters that provide noise-robustness to Automatic Speech Recognition (ASR)
+                                        features</p>
                                 </li>
                                 <li>
-                                    <p>Vladimir Fabregas et al, <a href="https://link.springer.com/content/pdf/10.1007%2F11551188_57.pdf" style="color: rgb(0,0,255)">“Transformations of LPC and LSF Parameters to Speech Recognition Features” </a>discusses features that can be obtained from the LPC parameters are the LPCC (LPC Cepstrum) and the MLPCC (Mel-Frequency
-                                        LPCC).
+                                    <p>Vladimir Fabregas et al, <a href="https://link.springer.com/content/pdf/10.1007%2F11551188_57.pdf" style="color: rgb(0,0,255)">“Transformations of LPC and LSF Parameters to Speech Recognition Features” </a>discusses
+                                        features that can be obtained from the LPC parameters are the LPCC (LPC Cepstrum) and the MLPCC (Mel-Frequency LPCC).
                                     </p>
                                 </li>
                             </ol>
@@ -290,27 +294,41 @@
                         <h3 id="Experiments">3. Experiments & Results</h3>
                         <div class="subheading">
                             <h5>3.1 Dataset Description</h5>
-                            <p>Firstly, we acquired youtube videos of various lecturers from nptel channel. Later we extracted the audio signal from the videos at a sampling rate of 8000 Hz. In order to generate an audio signal comprising of variable number of speakers of varied durations we concatenated the audio signals in such a way as to create various experimental test cases.
-				</br>Link: <a href="https://drive.google.com/drive/folders/0B6nPr2PIWVuPeXp1NHdaY1FnQms" style="color: rgb(0,0,255)">Audio Dataset</a>
+                            <p>Firstly, we acquired youtube videos of various lecturers from nptel channel. Later we extracted the audio signal from the videos at a sampling rate of 8000 Hz. In order to generate an audio signal comprising of variable number
+                                of speakers of varied durations we concatenated the audio signals in such a way as to create various experimental test cases.
+                                </br>Link: <a href="https://drive.google.com/drive/folders/0B6nPr2PIWVuPeXp1NHdaY1FnQms" style="color: rgb(0,0,255)">Audio Dataset</a>
                             </p>
                             <h5>Supervised:</h5>
                             <p>The probability that the model assigns the rightful class to a 20ms time-frame is shown in the plot below:</p>
                             <img src="images/7.jpg" alt="this" width="80%" style="margin-left: 10%;">
                             <div class="responsive1">
                                 <div class="gallery">
-                                    <a target="_blank" href="#">
+
                                         <img src="images/dsp/20speaker.png" alt="this" width="80%">
                                     </a>
                                 </div>
                             </div>
+                            <video width="100%" height="140" controls style=" border: 1px solid #777; margin: 10px;">
+                                 <source src="uniform.wav" type="audio/wav">
+                                 <track src="images/dsp/supervised_uniform.vtt" kind="subtitles" srclang="en" label="English" default>
+                            </video>
+                            To view the transition point of speakers <a href="images/dsp/supervised_uniform.vtt" target="_blank">click here</a>
                             <br>
                             <div class="responsive1">
                                 <div class="gallery">
-                                    <a target="_blank" href="#">
+
                                         <img src="images/dsp/random20_variable.png" alt="this" width="100%">
                                     </a>
                                 </div>
                             </div>
+
+
+                            <video width="100%" height="140" controls style=" border: 1px solid #777; margin: 10px;">
+                                 <source src="images/dsp/random_20.wav" type="audio/wav">
+                                 <track src="images/dsp/supervised_random.vtt" kind="subtitles" srclang="en" label="English" default>
+                            </video>
+                            To view the transition point of speakers <a href="images/dsp/supervised_uniform.vtt" target="_blank">click here</a>
+
                             <h5>Unsupervised:</h5>
                             <p>The features vectors of five speakers was passed through four stacked sparse autoencoders with ReLU as activation function. The output of the autoencoder was then modelled using Gaussian Mixture Model with no. of clusters set
                                 to 20. Decoded Value are the output of the sparse autoencoders.
@@ -341,28 +359,25 @@
 
                             <div class="responsive1e">
                                 <div class="gallery">
-                                    <a target="_blank" href="#">
+
                                         <img src="images/dsp/1.png" alt="this" width="80%">
-                                    </a>
-                                    <div class="desc">Visualization of Clusters generated by the GMM Model</div>
+                                                                        <div class="desc">Visualization of Clusters generated by the GMM Model</div>
                                 </div>
                             </div>
                             <br>
                             <div class="responsive">
                                 <div class="gallery">
-                                    <a target="_blank" href="#">
+
                                         <img src="images/dsp/1/output1.gif" alt="this" width="70%">
-                                    </a>
-                                    <div class="desc">Density of each Cluster</div>
+                                                                        <div class="desc">Density of each Cluster</div>
                                 </div>
                             </div>
 
                             <div class="responsive">
                                 <div class="gallery">
-                                    <a target="_blank" href="#">
+
                                         <img src="images/dsp/1_1.png" alt="this" width="70%">
-                                    </a>
-                                    <div class="desc">Speaker Identification</div>
+                                                                        <div class="desc">Speaker Identification</div>
                                 </div>
                             </div>
                             <br>
@@ -372,7 +387,7 @@
                                  <source src="uniform.wav" type="audio/wav">
                                  <track src="1_subs.vtt" kind="subtitles" srclang="en" label="English" default>
                             </video>
-
+                            To view the transition point of speakers <a href="1_subs.vtt" target="_blank">click here</a>
                             <p><br>
                                 <b class="subtopic">2nd Dataset:</b> 5 unique speakers with duration of each speaker increasing progressively.
 
@@ -381,28 +396,25 @@
 
                             <div class="responsive1e">
                                 <div class="gallery">
-                                    <a target="_blank" href="#">
+
                                         <img src="images/dsp/2.png" alt="this" width="80%">
-                                    </a>
-                                    <div class="desc">Visualization of Clusters generated by the GMM Model</div>
+                                                                        <div class="desc">Visualization of Clusters generated by the GMM Model</div>
                                 </div>
                             </div>
                             <br>
                             <div class="responsive">
                                 <div class="gallery">
-                                    <a target="_blank" href="#">
+
                                         <img src="images/dsp/2/output2.gif" alt="this" width="70%">
-                                    </a>
-                                    <div class="desc">Density of each Cluster</div>
+                                                                        <div class="desc">Density of each Cluster</div>
                                 </div>
                             </div>
 
                             <div class="responsive">
                                 <div class="gallery">
-                                    <a target="_blank" href="#">
+
                                         <img src="images/dsp/2_1_ml.png" alt="this" width="70%">
-                                    </a>
-                                    <div class="desc">Speaker Identification</div>
+                                                                        <div class="desc">Speaker Identification</div>
                                 </div>
                             </div>
                             <br>
@@ -415,27 +427,27 @@
 
                             <div class="responsive1e">
                                 <div class="gallery">
-                                    <a target="_blank" href="#">
+
                                             <img src="images/dsp/3.png" alt="this" width="80%">
-                                        </a>
+
                                     <div class="desc">Visualization of Clusters generated by the GMM Model</div>
                                 </div>
                             </div>
                             <br>
                             <div class="responsive">
                                 <div class="gallery">
-                                    <a target="_blank" href="#">
+
                                             <img src="images/dsp/3(Repeat)/output3.gif" alt="this" width="70%">
-                                        </a>
+
                                     <div class="desc">Density of each Cluster</div>
                                 </div>
                             </div>
 
                             <div class="responsive">
                                 <div class="gallery">
-                                    <a target="_blank" href="#">
+
                                             <img src="images/dsp/3_1_ml.png" alt="this" width="70%">
-                                        </a>
+
                                     <div class="desc">Speaker Identification</div>
                                 </div>
                             </div>
@@ -452,27 +464,27 @@
 
                             <div class="responsive1e">
                                 <div class="gallery">
-                                    <a target="_blank" href="#">
+
                                             <img src="images/dsp/4.png" alt="this" width="80%">
-                                        </a>
+
                                     <div class="desc">Visualization of Clusters generated by the GMM Model</div>
                                 </div>
                             </div>
                             <br>
                             <div class="responsive">
                                 <div class="gallery">
-                                    <a target="_blank" href="#">
+
                                             <img src="images/dsp/4(Random)/output4.gif" alt="this" width="70%">
-                                        </a>
+
                                     <div class="desc">Density of each Cluster</div>
                                 </div>
                             </div>
 
                             <div class="responsive">
                                 <div class="gallery">
-                                    <a target="_blank" href="#">
+
                                             <img src="images/dsp/3_1_ml.png" alt="this" width="70%">
-                                        </a>
+
                                     <div class="desc">Speaker Identification</div>
                                 </div>
                             </div>
@@ -487,6 +499,7 @@
 
                         </div>
                         <br>
+                        <h3 id="code">Code</h3> Code can be found <a href="https://github.com/mahimg/Speaker-recognition/tree/master/Code">here.</a>
                         <h3 id="Conclusions">4. Conclusion</h3>
                         <div class="subheading" style="padding-bottom: 200px;">
                             <h5>4.1 Summary</h5>

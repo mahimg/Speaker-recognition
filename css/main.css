@@ -624,6 +624,9 @@ div.desc {
     float: left;
     width: 89.99999%;
 }
-#Conclusions {
+#code {
 	margin-top: 100px;
+}
+video::-webkit-media-text-track-display {
+  font-size: 400%;
 }
