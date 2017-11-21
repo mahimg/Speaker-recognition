@@ -1,4 +1,6 @@
 # Speaker-recognition
+
+Project report at https://mahimg.github.io/Speaker-recognition/
 ## Abstract
 Speaker Sequence Segmentation is the first step in many audio-processing applications and aims to solve the problem ”who spoke when”. It therefore relies on efficient use of temporal information from extracted audio features. In this project, we have utilised the Linear Predictive Coefficients of the speech signal and it’s derived features to segment out the speech of individual speakers. We have employed both supervised and unsupervised learning methods to approach the problem.
 
