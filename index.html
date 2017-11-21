@@ -171,20 +171,20 @@
                                 recorded from a multi-speaker conversation, determine the number of speakers, determine the transition times between speakers and assign each speech segment to its speaker.</p>
                             <ol>
                                 <li>
-                                    <p>Miro, Xavier Anguera, et al. ”Speaker diarization: A review of recent research.” Audio, Speech, and Language Processing, IEEE Transactions on 20.2 (2012): 356-370 discusses two approach, top-down and bottom-up approach.
+                                    <p>Miro, Xavier Anguera, et al. <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6135543" style="color: rgb(0,0,255)">”Speaker diarization: A review of recent research.”</a> Audio, Speech, and Language Processing, IEEE Transactions on 20.2 (2012): 356-370 discusses two approach, top-down and bottom-up approach.
                                         The top-down approach is initialized with very few clusters (usually one) whereas the bottom-up approach is initialized with many clusters (usually more clusters than expected speakers). In both cases the aim is
                                         to iteratively converge towards an optimum number of clusters. If the final number is higher than the optimum then the system is said to under-cluster.</p>
                                 </li>
                                 <li>
-                                    <p>Qin Jin, Kornel Laskowski, Tanja Schultz, and Alex Waibel, ”Speaker Segmentation and Clustering In meetings” uses BIC ( Bayesian Information Criterion) to calculate the performance of different model. A negative value
+                                    <p>Qin Jin, Kornel Laskowski, Tanja Schultz, and Alex Waibel, <a href="https://pdfs.semanticscholar.org/910b/3d2fe351188d69007d82457e13c210ba9574.pdf" style="color: rgb(0,0,255)">”Speaker Segmentation and Clustering In meetings”</a> uses BIC ( Bayesian Information Criterion) to calculate the performance of different model. A negative value
                                         of BIC means that model provides a better fit to the data, that is there is a speaker change at point . Therefore, we continue merging segments until the value of BIC for the two closest segments is negative.</p>
                                 </li>
                                 <li>
-                                    <p>Aadel Alatwi, Stephen So, Kuldip K. Paliwal “Perceptually Motivated Linear Prediction Cepstral Features for Network Speech Recognition” proposed a new method for modifying the power spectrum of input speech to obtain
+                                    <p>Aadel Alatwi, Stephen So, Kuldip K. Paliwal <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7843309" style="color: rgb(0,0,255)">“Perceptually Motivated Linear Prediction Cepstral Features for Network Speech Recognition”</a> proposed a new method for modifying the power spectrum of input speech to obtain
                                         a set of perceptually motivated Linear Prediction (LP) parameters that provide noise-robustness to Automatic Speech Recognition (ASR) features</p>
                                 </li>
                                 <li>
-                                    <p>Vladimir Fabregas et al, “Transformations of LPC and LSF Parameters to Speech Recognition Features” discusses features that can be obtained from the LPC parameters are the LPCC (LPC Cepstrum) and the MLPCC (Mel-Frequency
+                                    <p>Vladimir Fabregas et al, <a href="https://link.springer.com/content/pdf/10.1007%2F11551188_57.pdf" style="color: rgb(0,0,255)">“Transformations of LPC and LSF Parameters to Speech Recognition Features” </a>discusses features that can be obtained from the LPC parameters are the LPCC (LPC Cepstrum) and the MLPCC (Mel-Frequency
                                         LPCC).
                                     </p>
                                 </li>
@@ -291,6 +291,7 @@
                         <div class="subheading">
                             <h5>3.1 Dataset Description</h5>
                             <p>Firstly, we acquired youtube videos of various lecturers from nptel channel. Later we extracted the audio signal from the videos at a sampling rate of 8000 Hz. In order to generate an audio signal comprising of variable number of speakers of varied durations we concatenated the audio signals in such a way as to create various experimental test cases.
+				</br>Link: <a href="https://drive.google.com/drive/folders/0B6nPr2PIWVuPeXp1NHdaY1FnQms" style="color: rgb(0,0,255)">Audio Dataset</a>
                             </p>
                             <h5>Supervised:</h5>
                             <p>The probability that the model assigns the rightful class to a 20ms time-frame is shown in the plot below:</p>
