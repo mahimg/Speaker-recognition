@@ -35,10 +35,10 @@ Further improvement can be done to improve robustness to noise and non-speech au
 ### Applications
 One of the most important application will be in transcription of conversation. It can be used to localise the instances of speaker instances to pool data for model training which in turn improve transcription accuracy.
 It can be used to crop the speech of a specific person of interest from a long audio clip.
+
 ## Team Members:
 * Abhishek Agrawal | [LinkedIn](https://www.linkedin.com/in/abhi-agrawal98/)        
 * Souradip Pal | [GitHub](https://github.com/Souradip-sopho) | [LinkedIn](https://www.linkedin.com/in/souradip-pal-a9693111b/)            
 * Mohammed Adnan | [LinkedIn](https://www.linkedin.com/in/mohd-adnan-10296b109/)             
-* Sahil Thandra           
-* Mahim Goyal | [GitHub](https://github.com/mahimg) | [LinkedIn](https://www.linkedin.com/in/mahimg/)          
-
+* Sahil Thandra | [GitHub](https://github.com/Sahil-Thandra) |[LinkedIn](https://www.linkedin.com/in/sahil-thandra/)          
+* Mahim Goyal | [GitHub](https://github.com/mahimg) | [LinkedIn](https://www.linkedin.com/in/mahimg/)
